@@ -1,0 +1,57 @@
+<nav class="navbar mc-bg-dark">
+    <div class="container-xxl">
+        <a class="navbar-brand" href="#">
+            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+                class="d-inline-block align-text-top">
+            Bootstrap
+        </a>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link mc-text-green" href="#">Visão geral</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mc-text-green" href="#">Lançamentos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mc-text-green" href="#">Relatórios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mc-text-green" aria-disabled="true">Gráficos</a>
+            </li>
+        </ul>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <div ngbDropdown>
+                    <a class="nav-link mc-text-green active" href="#" id="dropConfiguracao" ngbDropdownToggle>
+                        <i class="ri-settings-line ri-lg"></i>
+                    </a>
+                    <div ngbDropdownMenu aria-labelledby="dropConfiguracao">
+                        <button ngbDropdownItem>Contas</button>
+                        <a routerLink="config/categorias" ngbDropdownItem>Categorias</a>
+                        <button ngbDropdownItem>Cartão de Crédito</button>
+                        <div class="dropdown-divider"></div>
+                        <button ngbDropdownItem>Preferências</button>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mc-text-green" href="#">
+                    <i class="ri-notification-2-line ri-lg"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mc-text-green" href="#">
+                    <i class="ri-account-circle-fill ri-lg"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<nav class="navbar bg-white mb-5">
+    <div class="container-xxl">
+        Assine o premium
+    </div>
+</nav>
+<div class="container-lg">
+    <router-outlet></router-outlet>
+</div>
